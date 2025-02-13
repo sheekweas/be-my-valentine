@@ -1,0 +1,70 @@
+.letter {
+    position: relative;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 300px;
+    animation: appear 1.5s ease-in-out, shake 2s ease-in-out 1.5s;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  
+  .letter .letter-img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .letter p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(252, 225, 229);
+  }
+
+  .letter button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: rgb(249, 99, 124);
+    color: pink;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    transition: all ease 0.7s;
+  }
+
+  .letter button:hover {
+    font-size: 14.5px;
+    opacity: 0.8;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
